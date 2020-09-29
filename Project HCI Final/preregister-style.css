@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(./asset/bgRegis.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 30px 50px;
+}
+
+.header h1{
+    color: cornsilk;
+    margin-top: -98px;
+    text-align: center;
+}
+
+.form{
+    width: 330px;
+    height: 505px;
+    background-color: #1d2e43;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 15px 30px;
+}
+
+.form p{
+    color: wheat;
+    font-size: 15px;
+}
+
+.form input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e13026;
+    background: transparent;
+    outline: none;
+    margin-bottom: -18px;
+    color: wheat;
+}
+
+.form input[type="checkbox"]{
+    width: 5%;
+}
+
+.form .gender{
+    margin-top: -10px;
+    margin-bottom: 14px;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    color: wheat;
+    font-size: 12px;
+}
+
+.gender input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gender .checked{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 60%;
+    background-color: #e13026;
+}
+
+.gender:hover input ~ .checked{
+    background-color: wheat;
+}
+
+.checked::after{
+    content: " ";
+    position: absolute;
+    display: none;
+}
+
+.gender input:checked ~ .checked:after{
+    display: block;
+}
+
+.gender .checked:after{
+    top: 4px;
+    left: 3.8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 60%;
+    background: #1d2e43;
+}
+
+.agree{
+    color: wheat;
+    font-size: 12px;
+}
+
+.button .btnRegister{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    color: wheat;
+    background-color: #1d2e43;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.button .btnRegister:hover{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    color: #1d2e43;
+    background-color: wheat;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
